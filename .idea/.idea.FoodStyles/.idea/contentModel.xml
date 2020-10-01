@@ -13,6 +13,7 @@
         </e>
         <e p="Data" t="Include">
           <e p="ApplicationDbContext.cs" t="Include" />
+          <e p="MenuItem.cs" t="Include" />
         </e>
         <e p="Dockerfile" t="Include" />
         <e p="ExtensionMethods.cs" t="Include" />
@@ -31,7 +32,6 @@
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="Utils" t="Include">
-          <e p="MenuItem.cs" t="Include" />
           <e p="Scrapper.cs" t="Include" />
         </e>
         <e p="appsettings.Development.json" t="Include" />

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using FoodStyles.DTO;
 using FoodStyles.Services;
 using FoodStyles.Utils;
@@ -23,17 +20,11 @@ namespace FoodStyles.Controllers
             _foodService = foodService;
         }
 
-        [HttpGet]
-        public IEnumerable<MenuItem> Get()
-        {
-            
-            return _foodService.GetAll();
-        }
-
         [HttpPost]
-        public IEnumerable<MenuItem> Post([FromBody] StartUrlDTO value)
+        public ActionResult<IEnumerable<MenuItem>> Post([FromBody] StartUrlDTO value)
         {
-            return _foodService.ScrapeProcess(value.MenuUrl);
+            _logger.LogInformation("Accepted request");
+            return Ok (_foodService.ScrapeProcess(value.MenuUrl));
         }
     }
 }

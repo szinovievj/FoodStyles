@@ -14,20 +14,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2c69df5-ed99-43ca-9d7a-7b102693b349" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/FoodStyles/DTO/StartUrlDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FoodStyles/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FoodStyles/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FoodStyles/Services/FoodService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FoodStyles/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FoodStyles/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FoodStyles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FoodStyles/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodStyles/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FoodStyles/Controllers/ScrapeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodStyles/Controllers/ScrapeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FoodStyles/Controllers/ScrapeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FoodStyles/FoodStyles.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/FoodStyles/FoodStyles.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodStyles/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FoodStyles/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodStyles/Services/FoodService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FoodStyles/Services/FoodService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FoodStyles/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FoodStyles/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodStyles/Utils/MenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FoodStyles/Utils/MenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodStyles/Utils/MenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FoodStyles/Data/MenuItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FoodStyles/Utils/Scrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FoodStyles/Utils/Scrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodStyles/WeatherForecast.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodStyles/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/FoodStyles/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +33,16 @@
     <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///home/stasik/Desktop/net/FoodStyles/FoodStyles/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/stasik/Desktop/net/FoodStyles/FoodStyles/Utils/Scrapper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FoodStyles/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2F3F6665-BF1E-4C4B-8627-408167923126/29/49d3c9bc/HapCssExtensionMethods.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FoodStyles/food.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/stasik/Desktop/net/FoodStyles/FoodStyles/Utils/MenuItem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/22CA6935-7CB1-4521-8391-2326C6DD690E/3E/XPathParser.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FoodStyles/Utils/Scrapper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/45212CA3-153F-478C-B9B1-60517BBB01B3/1/Interop.IOErrors.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/stasik/Desktop/net/FoodStyles/FoodStyles/Startup.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -60,15 +58,16 @@
         <option value="$PROJECT_DIR$/FoodStyles/Data/Models/DishItem.cs" />
         <option value="$PROJECT_DIR$/FoodStyles/Utils/MenuItem.cs" />
         <option value="$PROJECT_DIR$/FoodStyles/DTO/StartUrlDTO.cs" />
-        <option value="$PROJECT_DIR$/FoodStyles/Startup.cs" />
         <option value="$PROJECT_DIR$/FoodStyles/appsettings.json" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/FoodStyles/Data/ApplicationDbContext.cs" />
-        <option value="$PROJECT_DIR$/FoodStyles/Controllers/ScrapeController.cs" />
         <option value="$PROJECT_DIR$/FoodStyles/Program.cs" />
+        <option value="$PROJECT_DIR$/FoodStyles/Controllers/ScrapeController.cs" />
+        <option value="$PROJECT_DIR$/FoodStyles/ViewModels/MenuItemViewModel.cs" />
         <option value="$PROJECT_DIR$/FoodStyles/Services/FoodService.cs" />
         <option value="$PROJECT_DIR$/FoodStyles/Utils/Scrapper.cs" />
+        <option value="$PROJECT_DIR$/FoodStyles/Startup.cs" />
       </list>
     </option>
   </component>
@@ -136,7 +135,7 @@
       <workItem from="1601540695080" duration="6561000" />
       <workItem from="1601547271038" duration="121000" />
       <workItem from="1601547411423" duration="103000" />
-      <workItem from="1601547531521" duration="8991000" />
+      <workItem from="1601547531521" duration="10641000" />
     </task>
     <task id="LOCAL-00001" summary="Scrapping process.">
       <created>1601546960544</created>
@@ -159,7 +158,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601547745962</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add docker files.">
+      <created>1601558011643</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601558011644</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add database and writing data there.">
+      <created>1601558036541</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601558036541</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +200,9 @@
     <MESSAGE value="Scrapping process." />
     <MESSAGE value="Init" />
     <MESSAGE value="Scraping site." />
-    <option name="LAST_COMMIT_MESSAGE" value="Scraping site." />
+    <MESSAGE value="Add docker files." />
+    <MESSAGE value="Add database and writing data there." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add database and writing data there." />
   </component>
   <component name="WindowStateProjectService">
     <state x="743" y="468" width="666" height="275" key="#C#" timestamp="1601547317954">
@@ -202,10 +217,10 @@
       <screen x="0" y="27" width="1920" height="997" />
     </state>
     <state x="555" y="187" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.997/1920.0.1920.1080@0.27.1920.997" timestamp="1601546353064" />
-    <state x="499" y="81" width="912" height="896" key="CommitChangelistDialog2" timestamp="1601554460962">
+    <state x="499" y="81" width="1421" height="896" key="CommitChangelistDialog2" timestamp="1601558036482">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state x="499" y="81" width="912" height="896" key="CommitChangelistDialog2/0.27.1920.997/1920.0.1920.1080@0.27.1920.997" timestamp="1601554460962" />
+    <state x="499" y="81" width="1421" height="896" key="CommitChangelistDialog2/0.27.1920.997/1920.0.1920.1080@0.27.1920.997" timestamp="1601558036482" />
     <state width="855" height="505" key="DebuggerActiveHint" timestamp="1601548227150">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
@@ -314,24 +329,5 @@
       <screen x="0" y="27" width="1920" height="997" />
     </state>
     <state x="617" y="264" width="686" height="546" key="find.popup/0.27.1920.997/1920.0.1920.1080@0.27.1920.997" timestamp="1601545112380" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/FoodStyles/Startup.cs</url>
-          <line>34</line>
-          <properties documentPath="$PROJECT_DIR$/FoodStyles/Startup.cs" initialLine="33">
-            <startOffsets>
-              <option value="1097" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1120" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

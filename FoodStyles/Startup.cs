@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 
 namespace FoodStyles
 {
@@ -33,6 +34,11 @@ namespace FoodStyles
             var path = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<ApplicationDbContext>(options => 
                 options.UseNpgsql(path));
+            
+            services.AddSwaggerGen(swagger =>
+            {
+                swagger.SwaggerDoc("v1", new OpenApiInfo { Title = "Food Parser" });
+            });
 
             services.AddScoped<FoodService>();
         }
@@ -50,6 +56,12 @@ namespace FoodStyles
             app.UseRouting();
 
             app.UseAuthorization();
+            
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Food Parser API");
+            });
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }

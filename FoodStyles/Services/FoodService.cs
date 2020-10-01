@@ -1,11 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net.Mime;
 using FoodStyles.Data;
 using FoodStyles.Utils;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace FoodStyles.Services
@@ -21,20 +17,16 @@ namespace FoodStyles.Services
             _logger = logger;
         }
 
-        public IEnumerable<MenuItem> GetAll()
-        {
-            return _context.Foods;
-        }
-
         public IEnumerable<MenuItem> ScrapeProcess(string startUrl)
         {
             try
             {
-                this.ClearDb();
-                Scrapper a = new Scrapper();
-                var items = a.Parse();
+                ClearDb();
+                
+                Scrapper scrapper = new Scrapper(startUrl);
+                var items = scrapper.Parse();
 
-                this.WriteToDb(items);
+                WriteToDb(items);
             }
             catch (Exception e)
             {
@@ -57,7 +49,6 @@ namespace FoodStyles.Services
             catch (Exception e)
             {
                 _logger.LogError(e.Message);
-                throw;
             }
            
         }
@@ -73,6 +64,11 @@ namespace FoodStyles.Services
             _context.SaveChanges();
             
             _logger.LogInformation("Data was saved successfully");
+        }
+        
+        private IEnumerable<MenuItem> GetAll()
+        {
+            return _context.Foods;
         }
     }
 }

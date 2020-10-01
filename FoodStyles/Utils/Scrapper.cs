@@ -2,20 +2,19 @@ using System.Collections.Generic;
 using System.Text.Json;
 using HtmlAgilityPack;
 using HtmlAgilityPack.CssSelectors.NetCore;
-using Microsoft.Extensions.Logging;
 using Serilog;
 
 namespace FoodStyles.Utils
 {
     public class Scrapper
     {
-        private const string StartUrl = "https://www.pure.co.uk/menus/breakfast/";
+        private readonly string _startUrl;
         private const string RootUrl = "https://www.pure.co.uk";
 
         
-        public Scrapper()
+        public Scrapper(string startUrl)
         {
-            
+            _startUrl = startUrl;
         }
 
         public IEnumerable<MenuItem> Parse()
@@ -68,7 +67,7 @@ namespace FoodStyles.Utils
 
         private List<KeyValuePair<string, string>> GetMenu()
         {
-            var startDoc = new HtmlWeb().Load(StartUrl);
+            var startDoc = new HtmlWeb().Load(_startUrl);
 
             var menuList = new List<KeyValuePair<string, string>>();
             
