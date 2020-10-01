@@ -13,16 +13,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2c69df5-ed99-43ca-9d7a-7b102693b349" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FoodStyles/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FoodStyles/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FoodStyles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FoodStyles/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodStyles/Controllers/ScrapeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FoodStyles/Controllers/ScrapeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodStyles/FoodStyles.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/FoodStyles/FoodStyles.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodStyles/Services/FoodService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FoodStyles/Services/FoodService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodStyles/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FoodStyles/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodStyles/Utils/MenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FoodStyles/Data/MenuItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodStyles/Utils/Scrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FoodStyles/Utils/Scrapper.cs" afterDir="false" />
-    </list>
+    <list default="true" id="b2c69df5-ed99-43ca-9d7a-7b102693b349" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,15 +24,18 @@
     <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///home/stasik/Desktop/net/FoodStyles/FoodStyles/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/stasik/Desktop/net/FoodStyles/FoodStyles/Utils/Scrapper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/stasik/Desktop/net/FoodStyles/FoodStyles/Utils/Scrapper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FoodStyles/food.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/stasik/Desktop/net/FoodStyles/FoodStyles/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/22CA6935-7CB1-4521-8391-2326C6DD690E/3E/XPathParser.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/45212CA3-153F-478C-B9B1-60517BBB01B3/1/Interop.IOErrors.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/stasik/Desktop/net/FoodStyles/FoodStyles/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FoodStyles/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2F3F6665-BF1E-4C4B-8627-408167923126/29/49d3c9bc/HapCssExtensionMethods.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FoodStyles/food.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///home/stasik/Desktop/net/FoodStyles/FoodStyles/Utils/MenuItem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/22CA6935-7CB1-4521-8391-2326C6DD690E/3E/XPathParser.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/stasik/Desktop/net/FoodStyles/FoodStyles/Controllers/ScrapeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FoodStyles/Utils/Scrapper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/45212CA3-153F-478C-B9B1-60517BBB01B3/1/Interop.IOErrors.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/stasik/Desktop/net/FoodStyles/FoodStyles/Startup.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -85,7 +79,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Parser/Parser.sln" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.FoodStyles">
@@ -135,7 +129,7 @@
       <workItem from="1601540695080" duration="6561000" />
       <workItem from="1601547271038" duration="121000" />
       <workItem from="1601547411423" duration="103000" />
-      <workItem from="1601547531521" duration="10641000" />
+      <workItem from="1601547531521" duration="10990000" />
     </task>
     <task id="LOCAL-00001" summary="Scrapping process.">
       <created>1601546960544</created>
@@ -172,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601558036541</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tiny refactoring naming/return values.&#10;Add swagger.">
+      <created>1601559552263</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601559552263</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +203,8 @@
     <MESSAGE value="Scraping site." />
     <MESSAGE value="Add docker files." />
     <MESSAGE value="Add database and writing data there." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add database and writing data there." />
+    <MESSAGE value="Tiny refactoring naming/return values.&#10;Add swagger." />
+    <option name="LAST_COMMIT_MESSAGE" value="Tiny refactoring naming/return values.&#10;Add swagger." />
   </component>
   <component name="WindowStateProjectService">
     <state x="743" y="468" width="666" height="275" key="#C#" timestamp="1601547317954">
@@ -217,10 +219,10 @@
       <screen x="0" y="27" width="1920" height="997" />
     </state>
     <state x="555" y="187" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.997/1920.0.1920.1080@0.27.1920.997" timestamp="1601546353064" />
-    <state x="499" y="81" width="1421" height="896" key="CommitChangelistDialog2" timestamp="1601558036482">
+    <state x="499" y="81" width="1421" height="896" key="CommitChangelistDialog2" timestamp="1601559552213">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state x="499" y="81" width="1421" height="896" key="CommitChangelistDialog2/0.27.1920.997/1920.0.1920.1080@0.27.1920.997" timestamp="1601558036482" />
+    <state x="499" y="81" width="1421" height="896" key="CommitChangelistDialog2/0.27.1920.997/1920.0.1920.1080@0.27.1920.997" timestamp="1601559552213" />
     <state width="855" height="505" key="DebuggerActiveHint" timestamp="1601548227150">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
@@ -317,10 +319,10 @@
       <screen x="0" y="27" width="1920" height="997" />
     </state>
     <state x="675" y="220" width="550" height="625" key="RollbackChangesDialog/0.27.1920.997/1920.0.1920.1080@0.27.1920.997" timestamp="1601546952388" />
-    <state x="449" y="160" width="1022" height="737" key="SettingsEditor" timestamp="1601547564189">
+    <state x="449" y="160" width="1022" height="737" key="SettingsEditor" timestamp="1601559641799">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state x="449" y="160" width="1022" height="737" key="SettingsEditor/0.27.1920.997/1920.0.1920.1080@0.27.1920.997" timestamp="1601547564189" />
+    <state x="449" y="160" width="1022" height="737" key="SettingsEditor/0.27.1920.997/1920.0.1920.1080@0.27.1920.997" timestamp="1601559641799" />
     <state width="960" height="498" key="XDebugger.FullValuePopup" timestamp="1601544990288">
       <screen x="0" y="27" width="1920" height="997" />
     </state>

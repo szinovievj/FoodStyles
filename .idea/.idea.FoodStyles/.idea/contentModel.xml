@@ -15,7 +15,6 @@
           <e p="ApplicationDbContext.cs" t="Include" />
           <e p="MenuItem.cs" t="Include" />
         </e>
-        <e p="Dockerfile" t="Include" />
         <e p="ExtensionMethods.cs" t="Include" />
         <e p="FoodStyles.csproj" t="IncludeRecursive" />
         <e p="Migrations" t="Include">
@@ -37,7 +36,6 @@
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="food.json" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
