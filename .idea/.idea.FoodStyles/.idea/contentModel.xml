@@ -6,19 +6,34 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="FoodStyles" t="IncludeRecursive">
         <e p="Controllers" t="Include">
-          <e p="WeatherForecastController.cs" t="Include" />
+          <e p="ScrapeController.cs" t="Include" />
         </e>
+        <e p="DTO" t="Include">
+          <e p="StartUrlDTO.cs" t="Include" />
+        </e>
+        <e p="Data" t="Include">
+          <e p="ApplicationDbContext.cs" t="Include" />
+        </e>
+        <e p="Dockerfile" t="Include" />
+        <e p="ExtensionMethods.cs" t="Include" />
         <e p="FoodStyles.csproj" t="IncludeRecursive" />
+        <e p="Migrations" t="Include">
+          <e p="20201001111402_InitialCreate.Designer.cs" t="Include" />
+          <e p="20201001111402_InitialCreate.cs" t="Include" />
+          <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
+        </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="FoodService.cs" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="Utils" t="Include">
           <e p="MenuItem.cs" t="Include" />
           <e p="Scrapper.cs" t="Include" />
         </e>
-        <e p="WeatherForecast.cs" t="Include" />
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
