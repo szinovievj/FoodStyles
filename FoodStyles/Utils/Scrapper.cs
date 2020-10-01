@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Text.Json;
+using System.Threading.Tasks;
 using HtmlAgilityPack;
 using HtmlAgilityPack.CssSelectors.NetCore;
 using Serilog;
@@ -23,7 +24,7 @@ namespace FoodStyles.Utils
             var menuList = GetMenu();
             var items = new List<MenuItem>();
 
-            foreach (var item in menuList)
+            Parallel.ForEach(menuList,item =>
             {
                 var path = RootUrl + item.Key;
                 Log.Logger.Information($"Parsing {item.Value}");
@@ -59,7 +60,7 @@ namespace FoodStyles.Utils
                         items.Add(tmp);
                     }
                 }
-            }
+            });
 
             Log.Logger.Information("Parsing was finished.");
             return items;
